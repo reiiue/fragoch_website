@@ -79,18 +79,18 @@
             <div class="col-lg-6">
                 <h2 class="display-5 fw-bold mb-4" style="color: #1a4d2e;">About Our Hotel</h2>
                 <p class="fs-5 mb-3 text-muted">
-                    Nestled in the heart of the city, our 5-star hotel offers an unparalleled experience of luxury and hospitality. 
-                    With over 50 years of excellence in service, we pride ourselves on delivering exceptional comfort to our guests.
+                    Nestled in the heart of the province of biliran, our hotel offers an unparalleled experience of luxury and hospitality. 
+                    we pride ourselves on delivering exceptional comfort to our guests.
                 </p>
                 <p class="fs-5 mb-4 text-muted">
-                    Our award-winning staff is dedicated to making your stay memorable. From world-class dining to spa facilities, 
+                    Our staff is dedicated to making your stay memorable. From dining to function hall facilities, 
                     every detail is designed to ensure your complete satisfaction.
                 </p>
                 <div class="row">
                     <div class="col-sm-6 mb-3">
                         <div class="d-flex align-items-center">
                             <i class="bi bi-star-fill me-3" style="font-size: 1.5rem; color: #c9a961;"></i>
-                            <span class="fs-6"><strong>5-Star Rated</strong></span>
+                            <span class="fs-6"><strong>4-Star Rated</strong></span>
                         </div>
                     </div>
                     <div class="col-sm-6 mb-3">

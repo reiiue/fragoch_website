@@ -32,7 +32,7 @@
                             <td class="description-cell" title="{{ $room->description }}">
                                 {{ \Illuminate\Support\Str::limit($room->description, 100) }}
                             </td>
-                            <td>${{ number_format($room->base_price, 2) }}</td>
+                            <td>₱{{ number_format($room->base_price, 2) }}</td>
 <td>
     <div class="d-flex gap-2 align-items-center">
         <a href="{{ route('admin.rooms.edit', $room->id) }}" class="btn btn-primary btn-sm">Edit</a>

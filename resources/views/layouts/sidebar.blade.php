@@ -1,26 +1,43 @@
 <style>
 
-        .sidebar {
-            width: 250px;
-            height: 100vh; /* Full height */
-            background: #121212;
-            position: sticky; /* Makes it stick */
-            top: 0;           /* Stick to top */
-            overflow-y: auto; /* Scrollable if menu is tall */
-        }
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #121212;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+}
 
-        .sidebar .menu-btn {
-            transition: all 0.2s;
-        }
+.sidebar .menu-btn {
+    border: none !important;
+    transition: all 0.15s;
+    color: #fff;
+}
 
-        .sidebar .menu-btn:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
+.sidebar .menu-btn:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
 
-        .sidebar .menu-btn.active {
-            background-color: #198754;
-            color: #fff;
-        }
+/* CLICK FEEDBACK */
+.sidebar .menu-btn:active {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    transform: scale(0.98);
+}
+
+/* PERSISTENT ACTIVE STATE (selected page) */
+.sidebar .menu-btn.active {
+    background-color: #198754 !important;
+    color: #fff !important;
+    transform: none; /* avoid active click shrinking staying applied */
+}
+
+/* Remove borders for header/footer if needed */
+.sidebar .top-section,
+.sidebar .footer-section {
+    border: none !important;
+}
+
 </style>
 
 
@@ -40,7 +57,7 @@
 <aside class="sidebar text-white d-flex flex-column">
 
     <!-- Logo -->
-    <div class="p-4 border-bottom border-secondary d-flex align-items-center gap-3">
+    <div class="p-4 top-section d-flex align-items-center gap-3">
     <a href="{{ route('home') }}">
             <div class="bg-primary p-2 rounded d-flex align-items-center justify-content-center">
                 <i data-lucide="log-out" class="text-white"></i>
@@ -68,11 +85,8 @@
     </nav>
 
     <!-- Footer -->
-    <div class="p-3 border-top border-secondary">
+    <div class="p-3 footer-section">
         <button class="btn btn-outline-light w-100 mb-2">Settings</button>
 
-        <small class="text-center text-white-50 d-block">
-            Admin Dashboard v1.0
-        </small>
     </div>
 </aside>
